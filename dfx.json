@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "mySmartContract_backend": {
+      "main": "src/mySmartContract_backend/main.mo",
+      "type": "motoko"
+    },
+    "mySmartContract_frontend": {
+      "dependencies": [
+        "mySmartContract_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/mySmartContract_frontend/src/index.html"
+      },
+      "source": [
+        "src/mySmartContract_frontend/assets",
+        "dist/mySmartContract_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
