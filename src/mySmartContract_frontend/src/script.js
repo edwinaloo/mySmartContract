@@ -2,7 +2,7 @@ import { mySmartContract_backend } from "../../declarations/mySmartContract_back
 // script.js
 
 async function vote(option) {
-  const response = await fetch('https://<YOUR_CANISTER_ID>.ic0.app/vote', {
+  const response = await fetch('https://bd3sg-teaaa-aaaaa-qaaba-cai.ic0.app/vote', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
